@@ -1,5 +1,12 @@
 export const validarVelocidad=(req,res,next)=>{
+
+    
     const {distancia,tiempo}=req.body;
+    if(tiempo ===undefined || distancia ===undefined){
+        return res.status(400).json({
+            "Mensaje":"Datos incompletos"
+        });
+    };
     if(tiempo<=0){
         return res.status(400).json({
             "mensaje": "el tiempo debe ser mayor a 0"
@@ -12,11 +19,7 @@ export const validarVelocidad=(req,res,next)=>{
         });
     };
 
-    if(tiempo ===undefined || distancia ===undefined){
-        return res.status(400).json({
-            "Mensaje":"Datos incompletos"
-        });
-    };
+    
     next();
 
 
@@ -24,6 +27,11 @@ export const validarVelocidad=(req,res,next)=>{
 
 export const validarTiempo=(req,res,next)=>{
     const {distancia,velocidad}=req.body;
+      if(velocidad ===undefined || distancia ===undefined){
+        return res.status(400).json({
+            "Mensaje":"Datos incompletos"
+        });
+    };
     if(velocidad<=0){
         return res.status(400).json({
             "mensaje": "La velocidad debe ser mayor a 0"
@@ -36,17 +44,19 @@ export const validarTiempo=(req,res,next)=>{
         });
     };
 
-    if(velocidad ===undefined || distancia ===undefined){
-        return res.status(400).json({
-            "Mensaje":"Datos incompletos"
-        });
-    };
+  
     next();
 
 
 }
 export const validarDistancia=(req,res,next)=>{
     const {velocidad,tiempo}=req.body;
+    
+    if(tiempo ===undefined || velocidad ===undefined){
+        return res.status(400).json({
+            "Mensaje":"Datos incompletos"
+        });
+    };
     if(velocidad<=0){
         return res.status(400).json({
             "mensaje": "la velocidad  debe ser mayor a 0"
@@ -67,11 +77,6 @@ export const validarDistancia=(req,res,next)=>{
         });
     };
 
-    if(tiempo ===undefined || velocidad ===undefined){
-        return res.status(400).json({
-            "Mensaje":"Datos incompletos"
-        });
-    };
     next();
 
 
@@ -79,6 +84,11 @@ export const validarDistancia=(req,res,next)=>{
 
 export const validarFuerza=(req,res,next)=>{
     const {aceleracion,masa}=req.body;
+     if(aceleracion ===undefined || masa ===undefined){
+        return res.status(400).json({
+            "Mensaje":"Datos incompletos"
+        });
+    };
     if(aceleracion<=0){
         return res.status(400).json({
             "mensaje": "la aceleracion  debe ser mayor a 0"
@@ -99,11 +109,7 @@ export const validarFuerza=(req,res,next)=>{
         });
     };
 
-    if(aceleracion ===undefined || masa ===undefined){
-        return res.status(400).json({
-            "Mensaje":"Datos incompletos"
-        });
-    };
+   
     next();
 
 
@@ -111,6 +117,11 @@ export const validarFuerza=(req,res,next)=>{
 
 export const validarPeso=(req,res,next)=>{
     const {masa,gramos}=req.body;
+       if(masa ===undefined || gramos ===undefined){
+        return res.status(400).json({
+            "Mensaje":"Datos incompletos"
+        });
+    };
     if(masa<=0){
         return res.status(400).json({
             "mensaje": "la masa  debe ser mayor a 0"
@@ -131,17 +142,18 @@ export const validarPeso=(req,res,next)=>{
         });
     };
 
-    if(masa ===undefined || gramos ===undefined){
-        return res.status(400).json({
-            "Mensaje":"Datos incompletos"
-        });
-    };
+ 
     next();
 
 
 }
 export const validarEnergiaCinetica=(req,res,next)=>{
     const {masa,velocidad}=req.body;
+    if(masa ===undefined || velocidad ===undefined){
+        return res.status(400).json({
+            "Mensaje":"Datos incompletos"
+        });
+    };
     if(masa<=0){
         return res.status(400).json({
             "mensaje": "la masa  debe ser mayor a 0"
@@ -162,11 +174,7 @@ export const validarEnergiaCinetica=(req,res,next)=>{
         });
     };
 
-    if(masa ===undefined || velocidad ===undefined){
-        return res.status(400).json({
-            "Mensaje":"Datos incompletos"
-        });
-    };
+    
     next();
 
 
