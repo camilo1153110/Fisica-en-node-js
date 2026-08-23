@@ -5,7 +5,7 @@ export const calcularVelocidad=(req,res) => {
         distancia,
         tiempo,
         velocidad,
-        "mensaje": `para recorrer una distancia de ${distancia} en un tiempo de  ${tiempo} se necesita una velocidad de ${velocidad}`
+        "mensaje": `para recorrer una distancia de ${distancia}M en un tiempo de  ${tiempo}M se necesita una velocidad de ${velocidad}M`
     });
 }
 
@@ -16,7 +16,7 @@ export const calcularTiempo=(req,res)=>{
         distancia,
         tiempo,
         velocidad,
-        "mensaje":`Teniendo la  distancia ${distancia}  en una velocidad de ${velocidad} se tarda este tiempo ${tiempo} `
+        "mensaje":`Teniendo la  distancia ${distancia}M  en una velocidad de ${velocidad}M se tarda este tiempo ${tiempo}M `
     });
 }
 
@@ -27,7 +27,7 @@ export const calcularDistancia=(req,res)=>{
         distancia,
         tiempo,
         velocidad,
-        "mensaje":` con una velocidad de   ${velocidad}  y un tiempo de  ${tiempo} recorre esta distancia ${distancia} `
+        "mensaje":` con una velocidad de   ${velocidad}M  y un tiempo de  ${tiempo}M recorre esta distancia ${distancia}M `
     });
 }
 
@@ -38,7 +38,7 @@ export const calcularFuerza=(req,res)=>{
         fuerza,
         masa,
         aceleracion,
-        "mensaje":`Teniendo la Masa ${masa}  con una aceleracion de ${aceleracion} tiene esta fuerza ${fuerza} `
+        "mensaje":`Teniendo la Masa ${masa}M  con una aceleracion de ${aceleracion}M tiene esta fuerza ${fuerza}M `
     });
 }
 export const calcularPeso=(req,res)=>{
@@ -48,7 +48,7 @@ export const calcularPeso=(req,res)=>{
         gramos,
         masa,
         peso,
-        "mensaje":`Teniendo la Masa ${masa}  con esta cantidad  de gramos ${gramos} tenemos un peso de  ${peso} `
+        "mensaje":`Teniendo la Masa ${masa}M  con esta cantidad  de gramos ${gramos}M tenemos un peso de  ${peso}M `
     });
 }
 
@@ -59,6 +59,6 @@ export const calcularEnergiaCinetica=(req,res)=>{
         energiacinetica,
         masa,
         velocidad,
-        "mensaje":`Teniendo la Masa ${masa}  con una velocidad de ${velocidad} obtenemos esta energia cinetica ${energiacinetica} `
+        "mensaje":`Teniendo la Masa ${masa}M  con una velocidad de ${velocidad}M obtenemos esta energia cinetica ${energiacinetica}M `
     });
 }
