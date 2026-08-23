@@ -5,7 +5,7 @@ export const calcularVelocidad=(req,res) => {
         distancia,
         tiempo,
         velocidad,
-        "mensaje": `para recorrer una distancia de ${distancia} Metros en un tiempo de  ${tiempo} Metros se necesita una velocidad de ${velocidad} Metros`
+        "mensaje": `para recorrer una distancia de ${distancia} Metros en un tiempo de  ${tiempo} segundos se necesita una velocidad de ${velocidad} Metros / segundos`
     });
 }
 
@@ -16,7 +16,7 @@ export const calcularTiempo=(req,res)=>{
         distancia,
         tiempo,
         velocidad,
-        "mensaje":`Teniendo la  distancia ${distancia} Metros  en una velocidad de ${velocidad} Metros se tarda este tiempo ${tiempo} Metros `
+        "mensaje":`Teniendo la  distancia ${distancia} Metros  en una velocidad de ${velocidad} Metros / segundos se tarda este tiempo ${tiempo} segundos `
     });
 }
 
@@ -27,7 +27,7 @@ export const calcularDistancia=(req,res)=>{
         distancia,
         tiempo,
         velocidad,
-        "mensaje":` con una velocidad de   ${velocidad} Metros  y un tiempo de  ${tiempo} Metros recorre esta distancia ${distancia} Metros `
+        "mensaje":` con una velocidad de   ${velocidad} Metros/Segundos y un tiempo de  ${tiempo} segundos recorre esta distancia ${distancia} Metros `
     });
 }
 
@@ -38,7 +38,7 @@ export const calcularFuerza=(req,res)=>{
         fuerza,
         masa,
         aceleracion,
-        "mensaje":`Teniendo la Masa ${masa} Metros etros con una aceleracion de ${aceleracion} Metros tiene esta fuerza ${fuerza} Metros `
+        "mensaje":`Teniendo la Masa ${masa} g  con una aceleracion de ${aceleracion} m/s2 tiene esta fuerza ${fuerza} N `
     });
 }
 export const calcularPeso=(req,res)=>{
@@ -48,7 +48,7 @@ export const calcularPeso=(req,res)=>{
         gramos,
         masa,
         peso,
-        "mensaje":`Teniendo la Masa ${masa} Metros  con esta cantidad  de gramos ${gramos} Metros tenemos un peso de  ${peso } Metros `
+        "mensaje":`Teniendo la Masa ${masa}g  con esta cantidad  de gramos ${gramos} g tenemos un peso de  ${peso } N `
     }); 
 }
 
@@ -59,6 +59,6 @@ export const calcularEnergiaCinetica=(req,res)=>{
         energiacinetica,
         masa,
         velocidad,
-        "mensaje":`Teniendo la Masa ${masa} Metros  con una velocidad de ${velocidad } Metros obtenemos esta energia cinetica ${energiacinetica} Metros `
+        "mensaje":`Teniendo la Masa ${masa} g  con una velocidad de ${velocidad } Metros / segundos obtenemos esta energia cinetica ${energiacinetica} Ec `
     });
 }
