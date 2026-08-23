@@ -5,7 +5,7 @@ export const calcularVelocidad=(req,res) => {
         distancia,
         tiempo,
         velocidad,
-        "mensaje": `para recorrer una distancia de ${distancia}M en un tiempo de  ${tiempo}M se necesita una velocidad de ${velocidad}M`
+        "mensaje": `para recorrer una distancia de ${distancia} Metros en un tiempo de  ${tiempo} Metros se necesita una velocidad de ${velocidad} Metros`
     });
 }
 
@@ -16,7 +16,7 @@ export const calcularTiempo=(req,res)=>{
         distancia,
         tiempo,
         velocidad,
-        "mensaje":`Teniendo la  distancia ${distancia}M  en una velocidad de ${velocidad}M se tarda este tiempo ${tiempo}M `
+        "mensaje":`Teniendo la  distancia ${distancia} Metros  en una velocidad de ${velocidad} Metros se tarda este tiempo ${tiempo} Metros `
     });
 }
 
@@ -27,7 +27,7 @@ export const calcularDistancia=(req,res)=>{
         distancia,
         tiempo,
         velocidad,
-        "mensaje":` con una velocidad de   ${velocidad}M  y un tiempo de  ${tiempo}M recorre esta distancia ${distancia}M `
+        "mensaje":` con una velocidad de   ${velocidad} Metros  y un tiempo de  ${tiempo} Metros recorre esta distancia ${distancia} Metros `
     });
 }
 
@@ -38,7 +38,7 @@ export const calcularFuerza=(req,res)=>{
         fuerza,
         masa,
         aceleracion,
-        "mensaje":`Teniendo la Masa ${masa}M  con una aceleracion de ${aceleracion}M tiene esta fuerza ${fuerza}M `
+        "mensaje":`Teniendo la Masa ${masa} Metros etros con una aceleracion de ${aceleracion} Metros tiene esta fuerza ${fuerza} Metros `
     });
 }
 export const calcularPeso=(req,res)=>{
@@ -48,8 +48,8 @@ export const calcularPeso=(req,res)=>{
         gramos,
         masa,
         peso,
-        "mensaje":`Teniendo la Masa ${masa}M  con esta cantidad  de gramos ${gramos}M tenemos un peso de  ${peso}M `
-    });
+        "mensaje":`Teniendo la Masa ${masa} Metros  con esta cantidad  de gramos ${gramos} Metros tenemos un peso de  ${peso } Metros `
+    }); 
 }
 
 export const calcularEnergiaCinetica=(req,res)=>{
@@ -59,6 +59,6 @@ export const calcularEnergiaCinetica=(req,res)=>{
         energiacinetica,
         masa,
         velocidad,
-        "mensaje":`Teniendo la Masa ${masa}M  con una velocidad de ${velocidad}M obtenemos esta energia cinetica ${energiacinetica}M `
+        "mensaje":`Teniendo la Masa ${masa} Metros  con una velocidad de ${velocidad } Metros obtenemos esta energia cinetica ${energiacinetica} Metros `
     });
 }
